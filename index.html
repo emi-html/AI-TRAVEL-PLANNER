@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Multimodal Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">TravelAI</div>
+    <ul>
+        <li>Plan Trip</li>
+        <li>Itinerary</li>
+        <li>Events</li>
+        <li>History</li>
+        <li class="login">Login</li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Plan Smarter Journeys with AI</h1>
+    <p>Multimodal routes, personalized recommendations & local events — all in one place.</p>
+</section>
+
+<!-- TRAVEL PLANNER -->
+<section class="card">
+    <h2>Plan Your Journey</h2>
+
+    <div class="grid">
+        <input id="source" placeholder="Source location">
+        <input id="destination" placeholder="Destination">
+        <input type="date" id="date">
+        <select id="mode">
+            <option>Any Mode</option>
+            <option>Flight</option>
+            <option>Train</option>
+            <option>Bus</option>
+            <option>Road</option>
+        </select>
+    </div>
+
+    <button onclick="planTrip()">Generate Plan</button>
+</section>
+
+<!-- RESULTS -->
+<section class="card" id="results">
+    <h2>Travel Recommendation</h2>
+    <div id="travelOutput" class="muted">Enter trip details to view AI recommendations.</div>
+</section>
+
+<!-- EVENTS -->
+<section class="card">
+    <h2>Local Events & Attractions</h2>
+    <ul id="events">
+        <li>🎭 Cultural Festival</li>
+        <li>🎵 Live Music Event</li>
+        <li>🏛️ Historical Museum Tour</li>
+    </ul>
+</section>
+
+<!-- ITINERARY -->
+<section class="card">
+    <h2>Your Itinerary</h2>
+    <div id="itinerary" class="muted">
+        Generated itinerary will appear here.
+    </div>
+</section>
+
+<!-- HISTORY -->
+<section class="card">
+    <h2>Travel History</h2>
+    <ul id="history">
+        <li>Delhi → Jaipur (Train)</li>
+        <li>Bangalore → Goa (Flight)</li>
+    </ul>
+</section>
+
+<footer>
+    © 2025 TravelAI · AI-Assisted Multimodal Travel Planner
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
